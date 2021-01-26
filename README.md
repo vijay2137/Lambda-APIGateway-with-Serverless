@@ -27,7 +27,7 @@
   
   Then, you'll need to install the plugin in your service:
     
-    npm install -g serverless-domain-manager --save-dev
+    npm install -g serverless-domain-manager
   
   Then, configure "domain-name" it into your serverless.yml:
   
@@ -37,12 +37,12 @@
   
   # create your custom domain with a single command:
     
-    serverless create_domain --stage dev
+    serverless create_domain
   Note: It may take 5 to 10min, for custom domain please go and check in API Gateway service
   
   ![image](https://user-images.githubusercontent.com/58024415/104114910-926b3580-532f-11eb-82f9-1e75016be6a7.png)
 # Once your domain name is ready, deploy your service:
-    serverless deploy --stage dev --region us-east-1   
+    serverless deploy --region us-east-1   
 # Open web UI and check output using below URL's
   https://serverless.nareshtestdomain.tk/hello
   
