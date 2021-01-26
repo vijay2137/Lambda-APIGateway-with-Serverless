@@ -8,16 +8,12 @@ provider:
 functions:
   hello:
     handler: handler.hello
-    environment:
-      SLS_DEBUG: true
     events:
       - http:
           path: hello
           method: get
   goodbye:
     handler: handler.goodbye
-    environment:
-      SLS_DEBUG: true    
     events:
       - http:
           path: goodbye
