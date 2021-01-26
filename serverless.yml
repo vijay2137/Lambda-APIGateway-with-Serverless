@@ -3,6 +3,7 @@ service: serverless-http
 provider:
   name: aws
   runtime: python3.6
+  stage: dev
 
 functions:
   hello:
