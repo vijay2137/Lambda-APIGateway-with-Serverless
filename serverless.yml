@@ -22,8 +22,8 @@ plugins:
 
 custom:
   customDomain:
-    domainName: serverless.nareshtestdomain.tk
+    domainName: helloworld.nareshtestdomain.tk
     basePath: ''
     stage: ${self:provider.stage}
     createRoute53Record: true
-    certificateArn: arn:aws:acm:us-east-1:389442125494:certificate/9cb93a84-208c-4efa-a871-8ae1076f2b25
+    certificateArn: arn:aws:acm:us-east-1:389442125494:certificate/aaf1e240-8617-4238-ace9-929671632dc0
