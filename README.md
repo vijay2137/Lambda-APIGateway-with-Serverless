@@ -17,26 +17,9 @@
   ![image](https://user-images.githubusercontent.com/58024415/104114989-761bc880-5330-11eb-83c3-530b8d6db2ca.png)
 # Get certificate for domain (certificate manager)
   ![image](https://user-images.githubusercontent.com/58024415/104115002-90ee3d00-5330-11eb-9ba6-f9e94d02984d.png)
-# Install Serverless
-    npm install -g serverless --unsafe-perm
-# Create a custom domain in API Gateway
-  By this point, you should have an issued certificate and a Serverless service with an HTTP event configured. 
-  Now you need to create a custom domain in API Gateway that you can use with your deployed gateways.
-  The easiest way to do this with Serverless is with the serverless-domain-manager plugin.
-  To use the plugin, first make sure you have a package.json file in your service. Run npm init -y to generate one.
-  
-  Then, you'll need to install the plugin in your service:
-    
-    npm install -g serverless-domain-manager
-  
-  Then, configure "domain-name" it into your serverless.yml:
-  
-  ![image](https://user-images.githubusercontent.com/58024415/104114673-048e4b00-532d-11eb-9c2c-0c2f31c41e01.png)
-
-  Make sure you replace the domainName value with the domain name that you've configured your certificate for. 
-  
-  # create your custom domain with a single command:
-    
+# Install dependencies
+    npm install
+# create your custom domain with a single command:
     serverless create_domain
   Note: It may take 5 to 10min, for custom domain please go and check in API Gateway service
   
